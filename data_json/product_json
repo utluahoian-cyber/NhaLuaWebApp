@@ -1,0 +1,1509 @@
+{
+  "data": [
+    {
+      "barcode": "164-1",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-DO-S",
+      "fields": [
+        {
+          "id": "8767d84b-8a35-4adf-83d5-c0ce8d1336af",
+          "keyValue": "DO",
+          "name": "Màu sắc",
+          "value": "Đỏ"
+        },
+        {
+          "id": "4affee1e-794f-4c94-879e-f4931e481ced",
+          "keyValue": "S",
+          "name": "SIZE",
+          "value": "S"
+        }
+      ],
+      "id": "3c826b3a-a4d7-460a-bd52-9c5639cf7eb5",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.017008",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-2",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-DO-M",
+      "fields": [
+        {
+          "id": "9e402209-e050-4a78-9a46-0174488ef565",
+          "keyValue": "DO",
+          "name": "Màu sắc",
+          "value": "Đỏ"
+        },
+        {
+          "id": "29462d2e-5237-4409-ae6d-fe179183f008",
+          "keyValue": "M",
+          "name": "SIZE",
+          "value": "M"
+        }
+      ],
+      "id": "eb443208-8883-4639-943e-c90fa3ff95a9",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.144302",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-3",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-DO-L",
+      "fields": [
+        {
+          "id": "aff6744e-8594-4269-8839-85c1794a13bf",
+          "keyValue": "DO",
+          "name": "Màu sắc",
+          "value": "Đỏ"
+        },
+        {
+          "id": "7cb001bb-bcf7-4fad-af46-9c079362ae57",
+          "keyValue": "L",
+          "name": "SIZE",
+          "value": "L"
+        }
+      ],
+      "id": "f9c5cbe3-7f66-4ac8-bf52-bf1641141d73",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.173611",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-4",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-DO-XL",
+      "fields": [
+        {
+          "id": "2d6706d5-6e39-465d-8894-3205f675603e",
+          "keyValue": "DO",
+          "name": "Màu sắc",
+          "value": "Đỏ"
+        },
+        {
+          "id": "f845d989-c19b-468d-bba2-7f24ec7957a1",
+          "keyValue": "XL",
+          "name": "SIZE",
+          "value": "XL"
+        }
+      ],
+      "id": "c5714444-a48d-4f15-9aae-f96c6f047371",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.353817",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-5",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-DEN-S",
+      "fields": [
+        {
+          "id": "4621dc3d-0f62-44d1-83ff-f675a9ac7fc6",
+          "keyValue": "DEN",
+          "name": "Màu sắc",
+          "value": "Đen"
+        },
+        {
+          "id": "10b898f6-961e-44b5-929f-f8b2b751e6b0",
+          "keyValue": "S",
+          "name": "SIZE",
+          "value": "S"
+        }
+      ],
+      "id": "58945ddf-88fc-424a-b313-de52ea5e1636",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.425618",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-6",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-DEN-M",
+      "fields": [
+        {
+          "id": "dd7cf12c-e650-4e51-bb97-5f92fa955ba1",
+          "keyValue": "DEN",
+          "name": "Màu sắc",
+          "value": "Đen"
+        },
+        {
+          "id": "e0a6c779-a4cf-447b-9c0e-468a753d0614",
+          "keyValue": "M",
+          "name": "SIZE",
+          "value": "M"
+        }
+      ],
+      "id": "90f33bb7-2dc2-40d6-8f4f-275966f5c3d4",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.489395",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-7",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-DEN-L",
+      "fields": [
+        {
+          "id": "ade24524-c82f-4036-8ddf-f1fb22916b04",
+          "keyValue": "DEN",
+          "name": "Màu sắc",
+          "value": "Đen"
+        },
+        {
+          "id": "e267d7de-1d28-4820-8de8-13692821fb30",
+          "keyValue": "L",
+          "name": "SIZE",
+          "value": "L"
+        }
+      ],
+      "id": "e30c34b5-da91-4cf4-a976-1afdbe66d998",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.512992",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-8",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-DEN-XL",
+      "fields": [
+        {
+          "id": "bfcc6fd0-71af-4798-b752-de95f96778a8",
+          "keyValue": "DEN",
+          "name": "Màu sắc",
+          "value": "Đen"
+        },
+        {
+          "id": "46759249-9f26-4e65-b237-01c7d5efa4e1",
+          "keyValue": "XL",
+          "name": "SIZE",
+          "value": "XL"
+        }
+      ],
+      "id": "4942a81a-b526-4c1f-872a-cb092629ad10",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.590582",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-9",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-XANH-S",
+      "fields": [
+        {
+          "id": "c5424f68-a1c9-4d96-9ad2-748bd22b6715",
+          "keyValue": "XANH",
+          "name": "Màu sắc",
+          "value": "Xanh"
+        },
+        {
+          "id": "66e16259-87c6-4357-9d75-ee84cec9835c",
+          "keyValue": "S",
+          "name": "SIZE",
+          "value": "S"
+        }
+      ],
+      "id": "0f4c9b42-3250-4276-b4d1-6be0dc9cbb9b",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.677315",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-10",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-XANH-M",
+      "fields": [
+        {
+          "id": "677ffd50-00e7-4cfd-a95c-2b9d60a19494",
+          "keyValue": "XANH",
+          "name": "Màu sắc",
+          "value": "Xanh"
+        },
+        {
+          "id": "c2034476-f04f-45c4-a27b-f00ad793804c",
+          "keyValue": "M",
+          "name": "SIZE",
+          "value": "M"
+        }
+      ],
+      "id": "bb1e4192-13a3-4df7-bfe4-ddde36e9efe1",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.689146",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-11",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-XANH-L",
+      "fields": [
+        {
+          "id": "d8e66b6a-4459-4f9e-86eb-57cfe692a0ad",
+          "keyValue": "XANH",
+          "name": "Màu sắc",
+          "value": "Xanh"
+        },
+        {
+          "id": "73e94b5d-b954-4b42-b077-bff7edbdd7d1",
+          "keyValue": "L",
+          "name": "SIZE",
+          "value": "L"
+        }
+      ],
+      "id": "f38ff42a-9f6a-4eb4-86ff-d94cc49f70dd",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.712455",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-12",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-XANH-XL",
+      "fields": [
+        {
+          "id": "91918cc5-ea15-401d-8b03-d014199dfac8",
+          "keyValue": "XANH",
+          "name": "Màu sắc",
+          "value": "Xanh"
+        },
+        {
+          "id": "d5cf71dd-cab7-4215-92d3-bd2886c9d825",
+          "keyValue": "XL",
+          "name": "SIZE",
+          "value": "XL"
+        }
+      ],
+      "id": "408d124a-b4d9-49a1-8585-f6b9bf4b8d8f",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:02.959066",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-13",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-VANG-S",
+      "fields": [
+        {
+          "id": "9433bbb1-7e0b-4887-adb0-bfa8be45b21b",
+          "keyValue": "VANG",
+          "name": "Màu sắc",
+          "value": "Vàng"
+        },
+        {
+          "id": "1aa228a6-cc91-4e94-8bcf-d87a1398dc56",
+          "keyValue": "S",
+          "name": "SIZE",
+          "value": "S"
+        }
+      ],
+      "id": "587295ed-ee67-4981-8dae-cc08b7f23243",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:03.136089",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-14",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-VANG-M",
+      "fields": [
+        {
+          "id": "e79c1f43-44aa-4d3f-842c-8f709bd7c126",
+          "keyValue": "VANG",
+          "name": "Màu sắc",
+          "value": "Vàng"
+        },
+        {
+          "id": "1c922789-2dba-4319-9fd2-edc85eb5e3a9",
+          "keyValue": "M",
+          "name": "SIZE",
+          "value": "M"
+        }
+      ],
+      "id": "468a6ada-5ed2-49de-b729-7cf555d15892",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:03.340367",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-15",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-VANG-L",
+      "fields": [
+        {
+          "id": "947c3c8e-f36b-4127-acc0-4549e0c8c67f",
+          "keyValue": "VANG",
+          "name": "Màu sắc",
+          "value": "Vàng"
+        },
+        {
+          "id": "a2a49487-0e3c-4e8d-857d-4a087167b5c1",
+          "keyValue": "L",
+          "name": "SIZE",
+          "value": "L"
+        }
+      ],
+      "id": "a4d54acb-c6e1-4593-9519-f0e9d522c75b",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:03.382743",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-16",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-VANG-XL",
+      "fields": [
+        {
+          "id": "1ae9deff-58cf-4e9b-9d62-b69b711e76b4",
+          "keyValue": "VANG",
+          "name": "Màu sắc",
+          "value": "Vàng"
+        },
+        {
+          "id": "1c942eb5-d091-4f43-b773-6cf283fa32dd",
+          "keyValue": "XL",
+          "name": "SIZE",
+          "value": "XL"
+        }
+      ],
+      "id": "9e477596-174e-4886-930d-34682538c341",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:03.394959",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-17",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-CAM-S",
+      "fields": [
+        {
+          "id": "e21cb6f8-0158-4775-a15b-a1821fd88f06",
+          "keyValue": "CAM",
+          "name": "Màu sắc",
+          "value": "Cam"
+        },
+        {
+          "id": "7f0cab66-2f03-43c1-bd06-f75074b48e09",
+          "keyValue": "S",
+          "name": "SIZE",
+          "value": "S"
+        }
+      ],
+      "id": "9e42c9a7-bb50-4cd9-a65d-b5c98e63cdb8",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:03.445871",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-18",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-CAM-M",
+      "fields": [
+        {
+          "id": "cd7e1c17-138c-4822-a120-79277054f69c",
+          "keyValue": "CAM",
+          "name": "Màu sắc",
+          "value": "Cam"
+        },
+        {
+          "id": "e30abe87-449c-4738-9405-ca71a3714b97",
+          "keyValue": "M",
+          "name": "SIZE",
+          "value": "M"
+        }
+      ],
+      "id": "4bbba98a-eda1-473b-a130-888aec757fde",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:03.463513",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-19",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-CAM-L",
+      "fields": [
+        {
+          "id": "0ab3c2df-5aa9-4ed9-bff6-795c70cfea41",
+          "keyValue": "CAM",
+          "name": "Màu sắc",
+          "value": "Cam"
+        },
+        {
+          "id": "57aef92a-7d86-4b9b-9c8f-0ba64d5653e7",
+          "keyValue": "L",
+          "name": "SIZE",
+          "value": "L"
+        }
+      ],
+      "id": "1f25b8c0-b9c1-465b-a4a8-9c7feb7b2351",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:03.514239",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "164-20",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSQ-CAM-XL",
+      "fields": [
+        {
+          "id": "d4953af1-3573-42db-9bed-df2ef6ead3a9",
+          "keyValue": "CAM",
+          "name": "Màu sắc",
+          "value": "Cam"
+        },
+        {
+          "id": "79dc26f9-19bb-4c68-bb36-e8c3a420c3ab",
+          "keyValue": "XL",
+          "name": "SIZE",
+          "value": "XL"
+        }
+      ],
+      "id": "54d827b7-8944-4fcb-ae99-6c8c80faf71c",
+      "images": [],
+      "inserted_at": "2025-08-29T04:01:03.550864",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSQ",
+        "image": null,
+        "inserted_at": "2025-08-29T04:01:01",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test quần",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "42bf1711-f5c7-42bf-ab71-a86d68d93354",
+      "remain_quantity": 0,
+      "retail_price": 150000,
+      "retail_price_after_discount": 150000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "163-1",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSA-DO-S",
+      "fields": [
+        {
+          "id": "bc437237-8ed9-4382-9557-06009b19cc2d",
+          "keyValue": "DO",
+          "name": "Màu sắc",
+          "value": "Đỏ"
+        },
+        {
+          "id": "983335ef-e338-4204-98ec-0c040a42467b",
+          "keyValue": "S",
+          "name": "SIZE",
+          "value": "S"
+        }
+      ],
+      "id": "ab9fc77f-ba3a-48d9-b925-b3c3362c915c",
+      "images": [],
+      "inserted_at": "2025-08-29T03:59:50.530692",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSA",
+        "image": null,
+        "inserted_at": "2025-08-29T03:59:50",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test áo",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "67d43dde-4ec6-4734-bd20-87a05cca3581",
+      "remain_quantity": 0,
+      "retail_price": 200000,
+      "retail_price_after_discount": 200000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "163-2",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSA-DO-M",
+      "fields": [
+        {
+          "id": "01beac01-f236-40ca-ac2f-70334909a1ee",
+          "keyValue": "DO",
+          "name": "Màu sắc",
+          "value": "Đỏ"
+        },
+        {
+          "id": "bcaabdcf-2bd1-4323-af0e-a6a492fd9103",
+          "keyValue": "M",
+          "name": "SIZE",
+          "value": "M"
+        }
+      ],
+      "id": "6984f417-feeb-4ea8-abe7-1012c1059d8c",
+      "images": [],
+      "inserted_at": "2025-08-29T03:59:50.534641",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSA",
+        "image": null,
+        "inserted_at": "2025-08-29T03:59:50",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test áo",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "67d43dde-4ec6-4734-bd20-87a05cca3581",
+      "remain_quantity": 0,
+      "retail_price": 200000,
+      "retail_price_after_discount": 200000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "163-3",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSA-DO-L",
+      "fields": [
+        {
+          "id": "0307e17f-0e87-4df2-8f60-17836eae486c",
+          "keyValue": "DO",
+          "name": "Màu sắc",
+          "value": "Đỏ"
+        },
+        {
+          "id": "f2b19b76-7374-48b9-88ae-d30a4bd95722",
+          "keyValue": "L",
+          "name": "SIZE",
+          "value": "L"
+        }
+      ],
+      "id": "afd73175-b409-45b8-94da-b717bcd8e409",
+      "images": [],
+      "inserted_at": "2025-08-29T03:59:50.537260",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSA",
+        "image": null,
+        "inserted_at": "2025-08-29T03:59:50",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test áo",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "67d43dde-4ec6-4734-bd20-87a05cca3581",
+      "remain_quantity": 0,
+      "retail_price": 200000,
+      "retail_price_after_discount": 200000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "163-4",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSA-DO-XL",
+      "fields": [
+        {
+          "id": "37504636-daff-41cc-aa65-cf3e4afb84fc",
+          "keyValue": "DO",
+          "name": "Màu sắc",
+          "value": "Đỏ"
+        },
+        {
+          "id": "9b48ffdf-e0c0-47cc-b1ee-b013be38a5ab",
+          "keyValue": "XL",
+          "name": "SIZE",
+          "value": "XL"
+        }
+      ],
+      "id": "ddaab514-cd3c-41f9-a0f3-f6608d095d5d",
+      "images": [],
+      "inserted_at": "2025-08-29T03:59:50.541924",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSA",
+        "image": null,
+        "inserted_at": "2025-08-29T03:59:50",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test áo",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "67d43dde-4ec6-4734-bd20-87a05cca3581",
+      "remain_quantity": 0,
+      "retail_price": 200000,
+      "retail_price_after_discount": 200000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "163-5",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSA-DEN-S",
+      "fields": [
+        {
+          "id": "83bedce8-2c3d-423a-bd3b-d05ab7c50643",
+          "keyValue": "DEN",
+          "name": "Màu sắc",
+          "value": "Đen"
+        },
+        {
+          "id": "857a1b07-af0c-4af3-b3d1-16282e21e62f",
+          "keyValue": "S",
+          "name": "SIZE",
+          "value": "S"
+        }
+      ],
+      "id": "8c91365f-48bb-4122-854e-61857b85104d",
+      "images": [],
+      "inserted_at": "2025-08-29T03:59:50.544768",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSA",
+        "image": null,
+        "inserted_at": "2025-08-29T03:59:50",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test áo",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "67d43dde-4ec6-4734-bd20-87a05cca3581",
+      "remain_quantity": 0,
+      "retail_price": 200000,
+      "retail_price_after_discount": 200000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "163-6",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSA-DEN-M",
+      "fields": [
+        {
+          "id": "d7c99b02-925f-4156-bab0-39a6ad1b0eee",
+          "keyValue": "DEN",
+          "name": "Màu sắc",
+          "value": "Đen"
+        },
+        {
+          "id": "d2267d3e-8d96-457c-b63a-c53daca690b3",
+          "keyValue": "M",
+          "name": "SIZE",
+          "value": "M"
+        }
+      ],
+      "id": "28acdf4f-06a7-4f7b-8f68-0c899a41449d",
+      "images": [],
+      "inserted_at": "2025-08-29T03:59:50.547098",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSA",
+        "image": null,
+        "inserted_at": "2025-08-29T03:59:50",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test áo",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "67d43dde-4ec6-4734-bd20-87a05cca3581",
+      "remain_quantity": 0,
+      "retail_price": 200000,
+      "retail_price_after_discount": 200000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "163-7",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSA-DEN-L",
+      "fields": [
+        {
+          "id": "e5b22da0-753b-4511-99ad-a28cf38b0653",
+          "keyValue": "DEN",
+          "name": "Màu sắc",
+          "value": "Đen"
+        },
+        {
+          "id": "6cebbf2d-8569-4f30-b44a-09fa92f58e25",
+          "keyValue": "L",
+          "name": "SIZE",
+          "value": "L"
+        }
+      ],
+      "id": "1e4109d2-ab78-402b-8f40-85a73c3e5a3a",
+      "images": [],
+      "inserted_at": "2025-08-29T03:59:50.549860",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSA",
+        "image": null,
+        "inserted_at": "2025-08-29T03:59:50",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test áo",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "67d43dde-4ec6-4734-bd20-87a05cca3581",
+      "remain_quantity": 0,
+      "retail_price": 200000,
+      "retail_price_after_discount": 200000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "163-8",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSA-DEN-XL",
+      "fields": [
+        {
+          "id": "50a14468-0293-4586-a3a7-71a380ac6541",
+          "keyValue": "DEN",
+          "name": "Màu sắc",
+          "value": "Đen"
+        },
+        {
+          "id": "41730d0b-91e6-4761-a1ba-23ec375ae0d7",
+          "keyValue": "XL",
+          "name": "SIZE",
+          "value": "XL"
+        }
+      ],
+      "id": "9a4f68cc-8b3a-4567-94d4-9cad1946a01f",
+      "images": [],
+      "inserted_at": "2025-08-29T03:59:50.553299",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSA",
+        "image": null,
+        "inserted_at": "2025-08-29T03:59:50",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test áo",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "67d43dde-4ec6-4734-bd20-87a05cca3581",
+      "remain_quantity": 0,
+      "retail_price": 200000,
+      "retail_price_after_discount": 200000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "163-9",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSA-XANH-S",
+      "fields": [
+        {
+          "id": "71b8e733-7ba9-4363-9102-059cdc3ef615",
+          "keyValue": "XANH",
+          "name": "Màu sắc",
+          "value": "Xanh"
+        },
+        {
+          "id": "2bdb4722-7ec5-473e-aa23-1201a8b2e36c",
+          "keyValue": "S",
+          "name": "SIZE",
+          "value": "S"
+        }
+      ],
+      "id": "09ced17b-5b9d-4920-9f0e-a346efcb6426",
+      "images": [],
+      "inserted_at": "2025-08-29T03:59:50.558407",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSA",
+        "image": null,
+        "inserted_at": "2025-08-29T03:59:50",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test áo",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "67d43dde-4ec6-4734-bd20-87a05cca3581",
+      "remain_quantity": 0,
+      "retail_price": 200000,
+      "retail_price_after_discount": 200000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    },
+    {
+      "barcode": "163-10",
+      "bonus_variations": [],
+      "composite_products": [],
+      "display_id": "TSA-XANH-M",
+      "fields": [
+        {
+          "id": "df1b2436-3087-45c0-a237-bec709a0fb8d",
+          "keyValue": "XANH",
+          "name": "Màu sắc",
+          "value": "Xanh"
+        },
+        {
+          "id": "d498351d-7e8f-477e-814c-3de74e35d78e",
+          "keyValue": "M",
+          "name": "SIZE",
+          "value": "M"
+        }
+      ],
+      "id": "b585bbab-2851-4207-9827-ac3b74fc7f41",
+      "images": [],
+      "inserted_at": "2025-08-29T03:59:50.562669",
+      "is_composite": false,
+      "is_hidden": false,
+      "is_locked": false,
+      "is_removed": null,
+      "is_sell_negative_variation": true,
+      "last_imported_price": 0,
+      "price_at_counter": 0,
+      "product": {
+        "categories": [],
+        "display_id": "TSA",
+        "image": null,
+        "inserted_at": "2025-08-29T03:59:50",
+        "is_published": null,
+        "manipulation_warehouses": [],
+        "name": "Test áo",
+        "note_product": "",
+        "tags": []
+      },
+      "product_id": "67d43dde-4ec6-4734-bd20-87a05cca3581",
+      "remain_quantity": 0,
+      "retail_price": 200000,
+      "retail_price_after_discount": 200000,
+      "total_purchase_price": 0,
+      "variations_warehouses": [],
+      "videos": null,
+      "weight": 0,
+      "wholesale_price": []
+    }
+  ],
+  "page_number": 1,
+  "page_size": 30,
+  "success": true,
+  "total_entries": 1323,
+  "total_pages": 45
+}

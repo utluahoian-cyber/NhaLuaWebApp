@@ -1,0 +1,510 @@
+{
+  "shops": [
+    {
+      "avatar_url": null,
+      "currency": "VND",
+      "id": 1577539,
+      "link_post_marketer": [
+        {
+          "ad_account_id": null,
+          "id": "b5f3fe88-d639-4abd-8b60-7d6bf17c27d6",
+          "inserted_at": "2025-04-23T07:44:07",
+          "is_link_source": false,
+          "marketer": "4ec0b07b-3a8b-4a8c-b5fb-2b6a48099264",
+          "multiple_post": [],
+          "multiple_source": [],
+          "post_id": null,
+          "shop_id": 1577539,
+          "source": null,
+          "type": "post"
+        }
+      ],
+      "name": "KINA - NHÀ LỤA",
+      "pages": [
+        {
+          "id": "102873111409062",
+          "is_onboard_xendit": null,
+          "name": "Nhà Lụa - Thời Trang Thiết Kế",
+          "platform": "facebook",
+          "progressive_catalog_error": "missing_permission",
+          "settings": {
+            "auto_create_order": false,
+            "current_settings_key": "X0qCP+L4yvK0vgya"
+          },
+          "shop_id": 1577539,
+          "tags": [
+            {
+              "color": "#bd2727",
+              "id": 5,
+              "lighten_color": "#ebbebe",
+              "text": "Đã chốt"
+            },
+            {
+              "color": "#822ba1",
+              "id": 1,
+              "lighten_color": "#d9bfe2",
+              "text": "Đã lên đơn"
+            },
+            {
+              "color": "#ffd80d",
+              "id": 2,
+              "lighten_color": "rgba(255,216,13,0.4)",
+              "text": "Đi bay"
+            },
+            {
+              "color": "#db93d3",
+              "id": 3,
+              "lighten_color": "rgba(219,147,211,0.4)",
+              "text": "Đã từng mua"
+            },
+            {
+              "color": "#1d0474",
+              "id": 4,
+              "lighten_color": "rgba(29,4,116,0.4)",
+              "text": "Tự ship"
+            },
+            {
+              "color": "#38a6f4",
+              "id": 6,
+              "lighten_color": "rgba(56,166,244,0.4)",
+              "text": "Đã gọi"
+            },
+            {
+              "color": "#0a0b0a",
+              "id": 7,
+              "lighten_color": "rgba(10,11,10,0.4)",
+              "text": "Chốt live"
+            },
+            {
+              "color": "#103701",
+              "id": 8,
+              "lighten_color": "rgba(16,55,1,0.4)",
+              "text": "Đổi hàng"
+            },
+            {
+              "color": "#9c9da0",
+              "id": 9,
+              "lighten_color": "rgba(156,157,160,0.4)",
+              "text": "Chốt lại"
+            },
+            {
+              "color": "#1550c6",
+              "id": 13,
+              "lighten_color": "rgba(21,80,198,0.4)",
+              "text": "Bom hàng"
+            },
+            {
+              "color": "#cec700",
+              "id": 14,
+              "lighten_color": "rgba(206,199,0,0.4)",
+              "text": "Không mua"
+            },
+            {
+              "color": "#4b7773",
+              "id": 15,
+              "lighten_color": "rgba(75,119,115,0.4)",
+              "text": "seeding"
+            },
+            {
+              "color": "#1cae67",
+              "id": 16,
+              "is_lead_event": false,
+              "lighten_color": "rgba(28,174,103,0.4)",
+              "text": "Yêu cầu riêng"
+            },
+            {
+              "color": "#ffc53d",
+              "id": 18,
+              "is_lead_event": false,
+              "lighten_color": "rgba(255,197,61,0.4)",
+              "text": "Đã mua shope"
+            },
+            {
+              "color": "#1890ff",
+              "id": 19,
+              "is_lead_event": false,
+              "lighten_color": "rgba(24,144,255,0.4)",
+              "text": "Đang giao hàng"
+            },
+            {
+              "color": "#77149e",
+              "id": 20,
+              "is_lead_event": false,
+              "lighten_color": "rgba(119,20,158,0.4)",
+              "text": "Đang vận chuyển"
+            },
+            {
+              "color": "#4b5577",
+              "id": 23,
+              "is_lead_event": false,
+              "lighten_color": "rgba(75,85,119,0.4)",
+              "text": "KH đã cho TT"
+            },
+            {
+              "color": "#cec700",
+              "id": 25,
+              "is_lead_event": false,
+              "lighten_color": "rgba(206,199,0,0.4)",
+              "text": "KH ko rep"
+            },
+            {
+              "color": "#138809",
+              "id": 26,
+              "is_lead_event": false,
+              "lighten_color": "rgba(19,136,9,0.4)",
+              "text": "Ko có Size"
+            }
+          ],
+          "username": "thoitrangtruyenthongnhalua"
+        },
+        {
+          "id": "igo_17841432189231657",
+          "is_onboard_xendit": null,
+          "name": "Nhà lụa",
+          "platform": "instagram_official",
+          "progressive_catalog_error": null,
+          "settings": {
+            "auto_create_order": false,
+            "current_settings_key": "N5lK87oGX4KGraTi"
+          },
+          "shop_id": 1577539,
+          "tags": [
+            {
+              "color": "#4b5577",
+              "id": 0,
+              "lighten_color": "#c9ccd6",
+              "text": "Kiểm hàng"
+            },
+            {
+              "color": "#822ba1",
+              "id": 1,
+              "lighten_color": "#d9bfe2",
+              "text": "Câu hỏi"
+            },
+            {
+              "color": "#0d5aff",
+              "id": 2,
+              "lighten_color": "#b6cdff",
+              "text": "Mua hàng"
+            },
+            {
+              "color": "#009344",
+              "id": 3,
+              "lighten_color": "#b2dec6",
+              "text": "Đã gửi"
+            },
+            {
+              "color": "#38a6f4",
+              "id": 4,
+              "lighten_color": "#c3e4fb",
+              "text": "Hết hàng"
+            },
+            {
+              "color": "#bd2727",
+              "id": 5,
+              "lighten_color": "#ebbebe",
+              "text": "Trả hàng"
+            }
+          ],
+          "username": "igo_nha.lua"
+        },
+        {
+          "id": "382874848237497",
+          "is_onboard_xendit": null,
+          "name": "KINA By Nhà Lụa",
+          "platform": "facebook",
+          "progressive_catalog_error": null,
+          "settings": {
+            "auto_create_order": false,
+            "current_settings_key": "tv0xCJntFx7RiAmU"
+          },
+          "shop_id": 1577539,
+          "tags": [
+            {
+              "color": "#4300ce",
+              "id": 23,
+              "is_lead_event": false,
+              "lighten_color": "rgba(67,0,206,0.4)",
+              "text": "Đã chốt"
+            },
+            {
+              "color": "#f20b0b",
+              "id": 7,
+              "is_lead_event": false,
+              "lighten_color": "rgba(242,11,11,0.4)",
+              "text": "Đã lên đơn"
+            },
+            {
+              "color": "#e1ff16",
+              "id": 6,
+              "is_lead_event": false,
+              "lighten_color": "rgba(225,255,22,0.4)",
+              "text": "Đi bay"
+            },
+            {
+              "color": "#1cae67",
+              "id": 8,
+              "is_lead_event": false,
+              "lighten_color": "rgba(28,174,103,0.4)",
+              "text": "Đã từng mua"
+            },
+            {
+              "color": "#9254de",
+              "id": 9,
+              "is_lead_event": false,
+              "lighten_color": "rgba(146,84,222,0.4)",
+              "text": "Tự ship"
+            },
+            {
+              "color": "#ea0eaf",
+              "id": 10,
+              "is_lead_event": false,
+              "lighten_color": "rgba(234,14,175,0.4)",
+              "text": "Đã gọi"
+            },
+            {
+              "color": "#0673ea",
+              "id": 11,
+              "is_lead_event": false,
+              "lighten_color": "rgba(6,115,234,0.4)",
+              "text": "Chốt live"
+            },
+            {
+              "color": "#767600",
+              "id": 12,
+              "is_lead_event": false,
+              "lighten_color": "rgba(118,118,0,0.4)",
+              "text": "Đổi hàng"
+            },
+            {
+              "color": "#bd2727",
+              "id": 13,
+              "is_lead_event": false,
+              "lighten_color": "rgba(189,39,39,0.4)",
+              "text": "Chốt lại"
+            },
+            {
+              "color": "#ffcc00",
+              "id": 14,
+              "is_lead_event": false,
+              "lighten_color": "rgba(255,204,0,0.4)",
+              "text": "Bom hàng"
+            },
+            {
+              "color": "#597ef7",
+              "id": 15,
+              "is_lead_event": false,
+              "lighten_color": "rgba(89,126,247,0.4)",
+              "text": "Không mua"
+            },
+            {
+              "color": "#fa8c16",
+              "id": 16,
+              "is_lead_event": false,
+              "lighten_color": "rgba(250,140,22,0.4)",
+              "text": "Seeding"
+            },
+            {
+              "color": "#9254de",
+              "id": 17,
+              "is_lead_event": false,
+              "lighten_color": "rgba(146,84,222,0.4)",
+              "text": "Yêu cầu riêng"
+            },
+            {
+              "color": "#ff7a45",
+              "id": 18,
+              "is_lead_event": false,
+              "lighten_color": "rgba(255,122,69,0.4)",
+              "text": "Đã mua Shope"
+            },
+            {
+              "color": "#54b10d",
+              "id": 19,
+              "is_lead_event": false,
+              "lighten_color": "rgba(84,177,13,0.4)",
+              "text": "Đang giao hàng"
+            },
+            {
+              "color": "#4b5577",
+              "id": 20,
+              "is_lead_event": false,
+              "lighten_color": "rgba(75,85,119,0.4)",
+              "text": "Đang vận chuyển"
+            },
+            {
+              "color": "#4b5577",
+              "id": 21,
+              "is_lead_event": false,
+              "lighten_color": "rgba(75,85,119,0.4)",
+              "text": "KH đã cho TT"
+            },
+            {
+              "color": "#cec700",
+              "id": 22,
+              "is_lead_event": false,
+              "lighten_color": "rgba(206,199,0,0.4)",
+              "text": "KH chưa TT"
+            },
+            {
+              "color": "#ff3030",
+              "id": 26,
+              "is_lead_event": false,
+              "lighten_color": "rgba(255,48,48,0.4)",
+              "text": "KH ko rep"
+            },
+            {
+              "color": "#ff3030",
+              "id": 27,
+              "is_lead_event": false,
+              "lighten_color": "rgba(255,48,48,0.4)",
+              "text": "Ko có Size"
+            }
+          ],
+          "username": "kinadesign.studio"
+        },
+        {
+          "id": "628359667327512",
+          "is_onboard_xendit": null,
+          "name": "Nhà Lụa",
+          "platform": "facebook",
+          "progressive_catalog_error": "missing_permission",
+          "settings": {
+            "auto_create_order": false,
+            "current_settings_key": "wk6w2i+Y0eBaygIp"
+          },
+          "shop_id": 1577539,
+          "tags": [
+            {
+              "color": "#ef2b0d",
+              "id": 0,
+              "lighten_color": "rgba(239,43,13,0.4)",
+              "text": "Đã chốt"
+            },
+            {
+              "color": "#e91395",
+              "id": 16,
+              "lighten_color": "rgba(233,19,149,0.4)",
+              "text": "Đã lên đơn"
+            },
+            {
+              "color": "#77149e",
+              "description": "",
+              "id": 46,
+              "is_lead_event": false,
+              "lighten_color": "rgba(119,20,158,0.4)",
+              "text": "Đi bay "
+            },
+            {
+              "color": "#822ba1",
+              "id": 1,
+              "lighten_color": "#d9bfe2",
+              "text": "Đã từng mua"
+            },
+            {
+              "color": "#1cae67",
+              "id": 30,
+              "is_lead_event": false,
+              "lighten_color": "rgba(28,174,103,0.4)",
+              "text": "TỰ SHIP"
+            },
+            {
+              "color": "#77149e",
+              "id": 43,
+              "is_lead_event": false,
+              "lighten_color": "rgba(119,20,158,0.4)",
+              "text": "Đã Gọi"
+            },
+            {
+              "color": "#597ef7",
+              "id": 41,
+              "is_lead_event": false,
+              "lighten_color": "rgba(89,126,247,0.4)",
+              "text": "chốt live"
+            },
+            {
+              "color": "#f4f107",
+              "id": 4,
+              "lighten_color": "rgba(244,241,7,0.4)",
+              "text": "Đổi hàng"
+            },
+            {
+              "color": "#774b64",
+              "id": 13,
+              "lighten_color": "rgba(119,75,100,0.4)",
+              "text": "Chốt lại"
+            },
+            {
+              "color": "#bd2727",
+              "id": 15,
+              "lighten_color": "rgba(189,39,39,0.4)",
+              "text": "Bom hàng"
+            },
+            {
+              "color": "#4b595e",
+              "id": 18,
+              "lighten_color": "rgba(75,89,94,0.4)",
+              "text": "Không mua"
+            },
+            {
+              "color": "#2c21d5",
+              "id": 20,
+              "lighten_color": "rgba(44,33,213,0.4)",
+              "text": "Seeding"
+            },
+            {
+              "color": "#b1b00d",
+              "description": "Khách này sẽ có những yêu cầu riêng biệt không giống ai",
+              "id": 24,
+              "lighten_color": "rgba(177,176,13,0.4)",
+              "text": "Yêu cầu riêng"
+            },
+            {
+              "color": "#0d5aff",
+              "id": 27,
+              "lighten_color": "rgba(13,90,255,0.4)",
+              "text": "ĐÃ MUA SHOPEE"
+            },
+            {
+              "color": "#1cae67",
+              "id": 31,
+              "is_lead_event": false,
+              "lighten_color": "rgba(28,174,103,0.4)",
+              "text": "ĐANG GIAO HÀNG"
+            },
+            {
+              "color": "#0eb8f5",
+              "id": 33,
+              "is_lead_event": false,
+              "lighten_color": "rgba(14,184,245,0.4)",
+              "text": "Đang vận chuyển"
+            },
+            {
+              "color": "#9254de",
+              "id": 47,
+              "is_lead_event": false,
+              "lighten_color": "rgba(146,84,222,0.4)",
+              "text": "KH đã cho TT"
+            },
+            {
+              "color": "#0e2f44",
+              "id": 48,
+              "is_lead_event": false,
+              "lighten_color": "rgba(14,47,68,0.4)",
+              "text": "KH ko rep"
+            },
+            {
+              "color": "#373737",
+              "id": 50,
+              "is_lead_event": false,
+              "lighten_color": "rgba(55,55,55,0.4)",
+              "text": "Ko có Size"
+            }
+          ],
+          "username": "instagramnhalua"
+        }
+      ]
+    }
+  ],
+  "success": true
+}

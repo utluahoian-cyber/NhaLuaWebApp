@@ -1,0 +1,51 @@
+// account admin
+admin
+nhalua123
+
+//account database phpmyadmin
+https://mysql-nhalua-u55990.vm.elestio.app:24580/
+
+root
+1XrchZgv-rfNk-E8T5YBBH
+
+// command
+celery -A NhaLuaWebApp beat --loglevel=info
+celery -A NhaLuaWebApp worker --loglevel=info -P gevent
+
+
+//
+D:
+.venv\Scripts\activate.bat
+
+
+redis-server
+netstat -ano | findstr :6379
+taskkill /PID 5080 /F
+
+
+
+
+
+
+//                       _oo0oo_
+//                      o8888888o
+//                      88" . "88
+//                      (| -_- |)
+//                      0\  =  /0
+//                    ___/`---'\___
+//                  .' \\|     |// '.
+//                 / \\|||  :  |||// \
+//                / _||||| -:- |||||- \
+//               |   | \\\  -  /// |   |
+//               | \_|  ''\---/''  |_/ |
+//               \  .-\__  '-'  ___/-. /
+//             ___'. .'  /--.--\  `. .'___
+//          ."" '<  `.___\_<|>_/___.' >' "".
+//         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+//         \  \ `_.   \_ __\ /__ _/   .-` /  /
+//     =====`-.____`.___ \_____/___.-`___.-'=====
+//                       `=---='
+//
+//     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//            
+//     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

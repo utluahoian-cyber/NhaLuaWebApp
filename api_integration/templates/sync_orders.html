@@ -1,0 +1,686 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block title %}Đồng bộ Đơn hàng{% endblock %}
+
+{% block extra_css %}
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                animation: {
+                    'bounce-slow': 'bounce 3s infinite',
+                    'pulse-slow': 'pulse 3s infinite',
+                    'fade-in': 'fadeIn 0.5s ease-in-out',
+                    'slide-up': 'slideUp 0.5s ease-out',
+                    'spin-slow': 'spin 3s linear infinite',
+                }
+            }
+        }
+    }
+</script>
+<style>
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+        from { 
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to { 
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .glass-effect {
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(209, 213, 219, 0.3);
+    }
+
+    .gradient-bg {
+        background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    }
+
+    .stats-gradient {
+        background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
+    }
+
+    .success-gradient {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    }
+
+    .error-gradient {
+        background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    }
+
+    .loading-dots::after {
+        content: '';
+        animation: dots 1.5s steps(5, end) infinite;
+    }
+
+    @keyframes dots {
+        0%, 20% { content: ''; }
+        40% { content: '.'; }
+        60% { content: '..'; }
+        80%, 100% { content: '...'; }
+    }
+
+    .hover-lift {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hover-lift:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    .table-row-hover {
+        transition: all 0.2s ease;
+    }
+
+    .table-row-hover:hover {
+        background-color: rgba(220, 38, 38, 0.05);
+        transform: scale(1.01);
+    }
+
+    .status-badge {
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.75rem;
+        font-weight: 500;
+        padding: 0.25rem 0.625rem;
+        border-radius: 9999px;
+    }
+
+    .status-draft { background-color: rgb(243 244 246); color: rgb(55 65 81); }
+    .status-submitted { background-color: rgb(219 234 254); color: rgb(29 78 216); }
+    .status-confirmed { background-color: rgb(220 252 231); color: rgb(5 150 105); }
+    .status-delivered { background-color: rgb(34 197 94); color: white; }
+    .status-cancelled { background-color: rgb(254 226 226); color: rgb(185 28 28); }
+    .status-returned { background-color: rgb(251 146 60); color: white; }
+    .status-waiting { background-color: rgb(254 240 138); color: rgb(146 64 14); }
+    .status-shipping { background-color: rgb(196 181 253); color: rgb(109 40 217); }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-br from-red-50 via-orange-50 to-pink-50 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section -->
+        <div class="text-center mb-12 animate-fade-in">
+            <div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-full bg-gradient-to-r from-red-500 to-pink-600 shadow-lg">
+                <i class="fas fa-shopping-cart text-3xl text-white"></i>
+            </div>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                Đồng bộ Đơn hàng
+                <span class="bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">Pancake API</span>
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Đồng bộ dữ liệu đơn hàng, thông tin vận chuyển và lịch sử trạng thái từ hệ thống Pancake
+            </p>
+        </div>
+
+        <!-- Success/Error Messages -->
+        {% if success is not None %}
+        <div class="mb-8 animate-slide-up">
+            {% if success %}
+            <div class="glass-effect border-l-4 border-green-500 p-6 rounded-lg shadow-lg">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-check-circle text-2xl text-green-500"></i>
+                    </div>
+                    <div class="ml-4 flex-1">
+                        <h3 class="text-lg font-semibold text-green-800">Đồng bộ thành công!</h3>
+                        <p class="text-green-700 mt-2">{{ message }}</p>
+                        {% if sync_time %}
+                        <p class="text-sm text-green-600 mt-2">
+                            <i class="fas fa-clock mr-1"></i>
+                            Thời gian: {{ sync_time|date:"d/m/Y H:i:s" }}
+                        </p>
+                        {% endif %}
+                        {% if synced_orders or synced_items or synced_addresses %}
+                        <div class="mt-3 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                            {% if synced_orders %}
+                            <div class="bg-white bg-opacity-50 rounded-lg p-3">
+                                <div class="text-green-800 font-semibold">{{ synced_orders }}</div>
+                                <div class="text-green-600">Đơn hàng đồng bộ</div>
+                            </div>
+                            {% endif %}
+                            {% if synced_items %}
+                            <div class="bg-white bg-opacity-50 rounded-lg p-3">
+                                <div class="text-green-800 font-semibold">{{ synced_items }}</div>
+                                <div class="text-green-600">Sản phẩm trong đơn</div>
+                            </div>
+                            {% endif %}
+                            {% if synced_addresses %}
+                            <div class="bg-white bg-opacity-50 rounded-lg p-3">
+                                <div class="text-green-800 font-semibold">{{ synced_addresses }}</div>
+                                <div class="text-green-600">Địa chỉ giao hàng</div>
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="glass-effect border-l-4 border-red-500 p-6 rounded-lg shadow-lg">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-exclamation-triangle text-2xl text-red-500"></i>
+                    </div>
+                    <div class="ml-4 flex-1">
+                        <h3 class="text-lg font-semibold text-red-800">Có lỗi xảy ra</h3>
+                        <p class="text-red-700 mt-2">{{ message }}</p>
+                        {% if error_details %}
+                        <details class="mt-4">
+                            <summary class="text-sm text-red-600 cursor-pointer hover:text-red-800">Chi tiết lỗi</summary>
+                            <ul class="mt-2 space-y-1">
+                                {% for error in error_details %}
+                                <li class="text-sm text-red-600">• {{ error }}</li>
+                                {% endfor %}
+                            </ul>
+                        </details>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <!-- Statistics Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <!-- Total Shops -->
+            <div class="glass-effect rounded-2xl p-6 hover-lift">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-red-500 to-red-600 flex items-center justify-center">
+                            <i class="fas fa-store text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Cửa hàng</p>
+                        <p class="text-3xl font-bold text-gray-900">{{ total_shops|default:0 }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Orders -->
+            <div class="glass-effect rounded-2xl p-6 hover-lift">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Đơn hàng</p>
+                        <p class="text-3xl font-bold text-gray-900">{{ total_orders|default:0 }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Items -->
+            <div class="glass-effect rounded-2xl p-6 hover-lift">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-pink-500 to-pink-600 flex items-center justify-center">
+                            <i class="fas fa-box text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Sản phẩm</p>
+                        <p class="text-3xl font-bold text-gray-900">{{ total_items|default:0 }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Addresses -->
+            <div class="glass-effect rounded-2xl p-6 hover-lift">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500 to-purple-600 flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Địa chỉ</p>
+                        <p class="text-3xl font-bold text-gray-900">{{ total_addresses|default:0 }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sync Section -->
+        <div class="glass-effect rounded-2xl p-8 mb-12">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">
+                    <i class="fas fa-sync-alt mr-3 text-red-600"></i>
+                    Đồng bộ đơn hàng
+                </h2>
+                
+                <div id="sync-status" class="mb-6">
+                    <p class="text-gray-600 mb-4">
+                        Nhấn nút bên dưới để bắt đầu đồng bộ dữ liệu đơn hàng từ Pancake API
+                    </p>
+                </div>
+
+                <form method="post" id="sync-form">
+                    {% csrf_token %}
+                    <button type="submit" id="sync-button" 
+                            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">
+                        <i class="fas fa-download mr-3 text-xl"></i>
+                        <span id="sync-text">Bắt đầu đồng bộ đơn hàng</span>
+                    </button>
+                </form>
+
+                <!-- Progress Bar -->
+                <div id="progress-container" class="mt-8 hidden">
+                    <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                        <div id="progress-bar" class="h-3 bg-gradient-to-r from-red-500 to-pink-600 rounded-full transition-all duration-1000 ease-out" style="width: 0%"></div>
+                    </div>
+                    <p id="progress-text" class="text-sm text-gray-600 mt-2">Đang chuẩn bị...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Orders Table -->
+        {% if orders %}
+        <div class="glass-effect rounded-2xl overflow-hidden">
+            <div class="px-8 py-6 border-b border-gray-200">
+                <h2 class="text-2xl font-bold text-gray-900">
+                    <i class="fas fa-list mr-3 text-red-600"></i>
+                    Đơn hàng gần đây
+                </h2>
+                <p class="text-gray-600 mt-1">{{ orders|length }} đơn hàng đầu tiên</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gradient-to-r from-gray-50 to-gray-100">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-xs font-semibold text-gray-900 uppercase tracking-wider">
+                                Đơn hàng
+                            </th>
+                            <th class="px-6 py-4 text-left text-xs font-semibold text-gray-900 uppercase tracking-wider">
+                                Khách hàng
+                            </th>
+                            <th class="px-6 py-4 text-left text-xs font-semibold text-gray-900 uppercase tracking-wider">
+                                Trạng thái
+                            </th>
+                            <th class="px-6 py-4 text-left text-xs font-semibold text-gray-900 uppercase tracking-wider">
+                                Tổng tiền
+                            </th>
+                            <th class="px-6 py-4 text-left text-xs font-semibold text-gray-900 uppercase tracking-wider">
+                                Nguồn
+                            </th>
+                            <th class="px-6 py-4 text-left text-xs font-semibold text-gray-900 uppercase tracking-wider">
+                                Ngày tạo
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        {% for order in orders %}
+                        <tr class="table-row-hover">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-12 w-12">
+                                        <div class="h-12 w-12 rounded-full bg-gradient-to-r from-red-400 to-pink-500 flex items-center justify-center text-white font-bold text-lg">
+                                            <i class="fas fa-receipt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="text-sm font-semibold text-gray-900">
+                                            #{{ order.system_id }}
+                                        </div>
+                                        <div class="text-sm text-gray-500">
+                                            {{ order.items.count }} sản phẩm
+                                        </div>
+                                        {% if order.cod > 0 %}
+                                        <div class="text-xs text-orange-600">
+                                            COD: {{ order.cod|floatformat:0 }}₫
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">{{ order.bill_full_name|default:"Chưa có tên" }}</div>
+                                <div class="text-sm text-gray-500">{{ order.bill_phone_number }}</div>
+                                {% if order.customer %}
+                                <div class="text-xs text-blue-600">
+                                    {{ order.customer.order_count }} đơn hàng
+                                </div>
+                                {% endif %}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                {% if order.status == 0 %}
+                                    <span class="status-badge status-draft">
+                                        <i class="fas fa-edit mr-1"></i>
+                                        Nháp
+                                    </span>
+                                {% elif order.status == 1 %}
+                                    <span class="status-badge status-submitted">
+                                        <i class="fas fa-paper-plane mr-1"></i>
+                                        Đã gửi
+                                    </span>
+                                {% elif order.status == 2 %}
+                                    <span class="status-badge status-confirmed">
+                                        <i class="fas fa-check mr-1"></i>
+                                        Đã xác nhận
+                                    </span>
+                                {% elif order.status == 3 %}
+                                    <span class="status-badge status-delivered">
+                                        <i class="fas fa-check-circle mr-1"></i>
+                                        Đã giao
+                                    </span>
+                                {% elif order.status == 4 %}
+                                    <span class="status-badge status-cancelled">
+                                        <i class="fas fa-times-circle mr-1"></i>
+                                        Đã hủy
+                                    </span>
+                                {% elif order.status == 5 %}
+                                    <span class="status-badge status-returned">
+                                        <i class="fas fa-undo mr-1"></i>
+                                        Đã trả
+                                    </span>
+                                {% elif order.status == 11 %}
+                                    <span class="status-badge status-waiting">
+                                        <i class="fas fa-clock mr-1"></i>
+                                        Đang chờ
+                                    </span>
+                                {% elif order.status == 15 %}
+                                    <span class="status-badge status-shipping">
+                                        <i class="fas fa-shipping-fast mr-1"></i>
+                                        Đang giao
+                                    </span>
+                                {% else %}
+                                    <span class="status-badge status-draft">
+                                        Trạng thái {{ order.status }}
+                                    </span>
+                                {% endif %}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">
+                                    <div class="font-semibold">{{ order.total_price|floatformat:0 }}₫</div>
+                                    {% if order.total_discount > 0 %}
+                                    <div class="text-xs text-red-600">
+                                        Giảm: {{ order.total_discount|floatformat:0 }}₫
+                                    </div>
+                                    {% endif %}
+                                    {% if order.shipping_fee > 0 %}
+                                    <div class="text-xs text-blue-600">
+                                        Ship: {{ order.shipping_fee|floatformat:0 }}₫
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                    <i class="fas fa-tag mr-1"></i>
+                                    {{ order.order_sources_name|default:"Unknown" }}
+                                </span>
+                                {% if order.is_livestream %}
+                                <div class="mt-1">
+                                    <span class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-red-100 text-red-800">
+                                        <i class="fas fa-video mr-1"></i>
+                                        Livestream
+                                    </span>
+                                </div>
+                                {% endif %}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <div>{{ order.inserted_at|date:"d/m/Y" }}</div>
+                                <div class="text-xs">{{ order.inserted_at|date:"H:i" }}</div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Sync History -->
+        {% if recent_sync_histories %}
+        <div class="mt-12 glass-effect rounded-2xl overflow-hidden">
+            <div class="px-8 py-6 border-b border-gray-200">
+                <h2 class="text-2xl font-bold text-gray-900">
+                    <i class="fas fa-history mr-3 text-orange-600"></i>
+                    Lịch sử đồng bộ gần đây
+                </h2>
+            </div>
+            <div class="divide-y divide-gray-200">
+                {% for history in recent_sync_histories %}
+                <div class="p-6 hover:bg-gray-50 transition-colors">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                {% if history.status == 'completed' %}
+                                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                {% elif history.status == 'failed' %}
+                                <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
+                                    <i class="fas fa-times text-red-600"></i>
+                                </div>
+                                {% else %}
+                                <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center">
+                                    <i class="fas fa-clock text-yellow-600"></i>
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="ml-4">
+                                <div class="text-sm font-medium text-gray-900">
+                                    Đồng bộ {{ history.get_sync_type_display }}
+                                </div>
+                                <div class="text-sm text-gray-500">
+                                    {{ history.started_at|date:"d/m/Y H:i:s" }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-sm font-medium text-gray-900">
+                                {% if history.status == 'completed' %}
+                                    <span class="text-green-600">Thành công</span>
+                                {% elif history.status == 'failed' %}
+                                    <span class="text-red-600">Thất bại</span>
+                                {% else %}
+                                    <span class="text-yellow-600">{{ history.get_status_display }}</span>
+                                {% endif %}
+                            </div>
+                            <div class="text-xs text-gray-500">
+                                Tạo: {{ history.created_records }} | Cập nhật: {{ history.updated_records }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const syncForm = document.getElementById('sync-form');
+    const syncButton = document.getElementById('sync-button');
+    const syncText = document.getElementById('sync-text');
+    const progressContainer = document.getElementById('progress-container');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
+    const syncStatus = document.getElementById('sync-status');
+
+    let progressInterval;
+
+    syncForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Disable button and show progress
+        syncButton.disabled = true;
+        syncButton.classList.add('opacity-50', 'cursor-not-allowed');
+        syncText.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Đang đồng bộ<span class="loading-dots"></span>';
+        
+        // Show progress bar
+        progressContainer.classList.remove('hidden');
+        
+        // Simulate progress
+        let progress = 0;
+        progressInterval = setInterval(() => {
+            progress += Math.random() * 10;
+            if (progress > 90) progress = 90;
+            
+            progressBar.style.width = progress + '%';
+            
+            if (progress < 25) {
+                progressText.textContent = 'Đang kết nối API và tải dữ liệu shops...';
+            } else if (progress < 50) {
+                progressText.textContent = 'Đang tải dữ liệu đơn hàng...';
+            } else if (progress < 75) {
+                progressText.textContent = 'Đang xử lý sản phẩm và địa chỉ giao hàng...';
+            } else {
+                progressText.textContent = 'Đang lưu dữ liệu và cập nhật quan hệ...';
+            }
+        }, 800);
+
+        // Submit form
+        fetch(window.location.pathname, {
+            method: 'POST',
+            body: new FormData(syncForm),
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+            }
+        })
+        .then(response => response.text())
+        .then(html => {
+            // Complete progress
+            clearInterval(progressInterval);
+            progressBar.style.width = '100%';
+            progressText.textContent = 'Hoàn thành đồng bộ đơn hàng!';
+            
+            setTimeout(() => {
+                // Reload page to show results
+                window.location.reload();
+            }, 1500);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            clearInterval(progressInterval);
+            
+            // Reset button
+            syncButton.disabled = false;
+            syncButton.classList.remove('opacity-50', 'cursor-not-allowed');
+            syncText.innerHTML = '<i class="fas fa-download mr-3"></i>Bắt đầu đồng bộ đơn hàng';
+            
+            // Hide progress
+            progressContainer.classList.add('hidden');
+            
+            // Show error
+            syncStatus.innerHTML = `
+                <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-lg">
+                    <div class="flex">
+                        <i class="fas fa-exclamation-circle text-red-400 mr-3 text-lg"></i>
+                        <p class="text-red-700">Có lỗi xảy ra khi đồng bộ đơn hàng. Vui lòng thử lại.</p>
+                    </div>
+                </div>
+            `;
+        });
+    });
+
+    // Add smooth scroll for tables on mobile
+    const tables = document.querySelectorAll('.overflow-x-auto');
+    tables.forEach(table => {
+        table.style.scrollBehavior = 'smooth';
+    });
+
+    // Add loading animation to stats cards
+    const statsCards = document.querySelectorAll('.hover-lift');
+    statsCards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.1}s`;
+        card.classList.add('animate-slide-up');
+    });
+
+    // Status badge hover effects
+    const statusBadges = document.querySelectorAll('.status-badge');
+    statusBadges.forEach(badge => {
+        badge.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.05)';
+        });
+        badge.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+        });
+    });
+
+    // Table row animations
+    const tableRows = document.querySelectorAll('.table-row-hover');
+    tableRows.forEach((row, index) => {
+        row.style.animationDelay = `${index * 0.05}s`;
+        row.classList.add('animate-fade-in');
+    });
+
+    // Auto refresh every 30 seconds if sync is in progress
+    if (document.querySelector('.status-badge')) {
+        const hasRunningSync = Array.from(document.querySelectorAll('.status-badge')).some(badge => 
+            badge.textContent.includes('Đang') || badge.textContent.includes('running')
+        );
+        
+        if (hasRunningSync) {
+            setTimeout(() => {
+                window.location.reload();
+            }, 30000);
+        }
+    }
+});
+
+// Helper function to format currency
+function formatCurrency(amount) {
+    return new Intl.NumberFormat('vi-VN', {
+        style: 'currency',
+        currency: 'VND'
+    }).format(amount);
+}
+
+// Helper function to format date
+function formatDate(dateString) {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('vi-VN', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+}
+
+// Add tooltips for status badges
+document.addEventListener('DOMContentLoaded', function() {
+    const statusTooltips = {
+        'Nháp': 'Đơn hàng chưa được xác nhận',
+        'Đã gửi': 'Đơn hàng đã được gửi đi xử lý',
+        'Đã xác nhận': 'Đơn hàng đã được xác nhận và chuẩn bị',
+        'Đã giao': 'Đơn hàng đã được giao thành công',
+        'Đã hủy': 'Đơn hàng đã bị hủy',
+        'Đã trả': 'Đơn hàng đã được trả lại',
+        'Đang chờ': 'Đơn hàng đang chờ xử lý',
+        'Đang giao': 'Đơn hàng đang được vận chuyển'
+    };
+
+    Object.keys(statusTooltips).forEach(status => {
+        const elements = document.querySelectorAll(`.status-badge:contains("${status}")`);
+        elements.forEach(el => {
+            el.title = statusTooltips[status];
+        });
+    });
+});
+</script>
+{% endblock %}
