@@ -1,0 +1,1 @@
+web: gunicorn NhaLuaWebApp.wsgi --log-file -
