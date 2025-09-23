@@ -30,16 +30,16 @@ app.conf.beat_schedule = {
         'schedule': crontab(hour=4, minute=0),  
     },
     
-    # Sync customers (30 days) - mỗi 1 giờ 30 phút
+    # Sync customers - giảm xuống mỗi 3 giờ
     'sync-customers-30-days': {
         'task': 'api_integration.tasks.sync_all_customers_30_days',
-        'schedule': crontab(minute='*/90'),  # Mỗi 90 phút
+        'schedule': crontab(minute=0, hour='*/3'),  # Mỗi 3 giờ
     },
     
-    # Sync orders - mỗi 30 phút
-    'sync-orders-every-30-minutes': {
+    # Sync orders - giảm xuống mỗi 1 giờ
+    'sync-orders-hourly': {
         'task': 'api_integration.tasks.sync_orders_daily',
-        'schedule': crontab(minute='*/30'),
+        'schedule': crontab(minute=0),  # Mỗi giờ
     },
     
     # Sync all data - mỗi ngày (2:00 AM)
@@ -48,10 +48,10 @@ app.conf.beat_schedule = {
         'schedule': crontab(hour=2, minute=0),
     },
     
-    # Cleanup - mỗi 10 phút
+    # Cleanup - giảm xuống mỗi 2 giờ
     'cleanup-customer-sync-histories': {
         'task': 'api_integration.tasks.cleanup_old_customer_sync_histories',
-        'schedule': crontab(minute='*/10'),
+        'schedule': crontab(minute=0, hour='*/2'),  # Mỗi 2 giờ
     },
 }
 
